@@ -29,7 +29,8 @@ public class CBHW {
 
             txs.get(0).getId();
 
-            TransactionsResponse page_2 = cb.getTransactions(2);
+            TransactionsResponse page_2 = cb.getTransactions(1);
+
             System.out.println("done");
         } catch (IOException e) {
             e.printStackTrace();
