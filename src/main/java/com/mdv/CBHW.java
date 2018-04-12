@@ -23,19 +23,20 @@ public class CBHW {
             r.getTotalCount(); // 45
             r.getCurrentPage(); // 1
             r.getNumPages(); // 2
+            //assert r.getNumPages() == 2;
 
             List<Transaction> txs = r.getTransactions();
 
             txs.get(0).getId();
 
             TransactionsResponse page_2 = cb.getTransactions(2);
-
+            System.out.println("done");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (CoinbaseException e) {
             e.printStackTrace();
         }
-        System.out.println("done");
+
 
 
     }
